@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom right, #2c3e50, #f3665f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  width: 350px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.progress-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  height: 10px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.progress {
+  background: #ee4346;
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+.counter {
+  font-weight: bold;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#todo-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50px 0 0 50px;
+  outline: none;
+  font-size: 1rem;
+  background: rgba(255, 253, 253, 0.2);
+  color: white;
+}
+
+#add-btn {
+  padding: 0 20px;
+  border: none;
+  background: #ff4e50;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#add-btn:hover {
+  background: #ff3a3a;
+}
+
+ul {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 10px;
+  border-radius: 12px;
+  padding: 12px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+li.done span {
+  text-decoration: line-through;
+  color: #f3f0f0;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task-actions button {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.task-actions button:hover {
+  transform: scale(1.2);
+}
+
+.check {
+  color: #00ff99;
+}
+
+.edit {
+  color: #ffc107;
+}
+
+.delete {
+  color: #ff4e50;
+}

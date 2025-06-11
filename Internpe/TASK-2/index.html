@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShopEasy - E-Commerce</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">ShopEasy</h1>
+      <nav>
+        <a href="#" id="home-btn" class="nav-link active">Home</a>
+        <a href="#" id="products-btn" class="nav-link">Products</a>
+        <a href="#" id="contact-btn" class="nav-link">Contact Us</a>
+        <a href="#" id="cart-btn" aria-label="Open cart">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="main-content" tabindex="-1">
+    <!-- Dynamic content will be injected here -->
+  </main>
+
+  <!-- Cart sidebar -->
+  <div id="cart-overlay" class="cart-overlay" tabindex="-1" aria-hidden="true"></div>
+  <aside id="cart" class="cart" aria-label="Shopping Cart" tabindex="-1">
+    <button id="close-cart" aria-label="Close cart">&times;</button>
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <div id="cart-total" class="cart-total">Total: $0.00</div>
+    <button id="clear-cart" class="btn-clear">Clear Cart</button>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
